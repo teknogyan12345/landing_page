@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    color: orangered;
+}
+.title {
+    color: red;
+}
+
+.container {
+    color: #eee;
+    background: #35424a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: red 4px solid;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+.list li {
+    margin: auto 10px;
+    list-style: none;
+}
+
+.section-1{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    height: 50vh;
+    overflow: hidden;
+
+    /* background-image: url(/images/pexels-pixabay-4158.jpg); */
+}
+.section-1:before{
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url('/images/pexels-pixabay-4158.jpg');
+    opacity:0.4;
+}
+.section-1-text {
+    margin: 40px;
+}
+.section-1-text p{
+    margin-top: 20px;
+}
+
+.newsletter {
+    background-color: #233;
+}
+
+.newsletter .submit-button {
+    background-color: orangered;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.newsletter-container {
+    color: #eee;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    padding: 0 2.5rem;
+    justify-content: space-between;
+}
+
+.products {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+.products .item {
+    margin: 10px;
+} 
+.products img {
+    width: 80px;
+    margin: 20px;
+}
+
+.item p {
+    margin-top: 1rem;
+    font-size: medium;
+}
+footer {
+    background-color: orangered;
+}
+footer p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .list {
+        margin-top: 2rem;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
